@@ -1,0 +1,11 @@
+
+# Archivos privados
+config/conexion.php
+*.sql
+*.zip
+crear_admin.php
+
+# Archivos de prueba
+bibliotecario/php.txt
+bibliotecario/prueba.php
+lector/prueba.php

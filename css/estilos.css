@@ -1,0 +1,186 @@
+
+/* =================================
+   BIBLIOTECA ONLINE - ROSA Y MORADO
+================================= */
+
+:root {
+    --rosa-claro: #fff0f6;
+    --rosa: #f4a6c1;
+    --rosa-intenso: #df6b9a;
+    --morado-claro: #eee5ff;
+    --morado: #9872d4;
+    --morado-oscuro: #62418f;
+    --fondo: #fff8fc;
+    --texto: #49364f;
+    --blanco: #ffffff;
+}
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar {
+    background: linear-gradient(
+        100deg,
+        var(--rosa-intenso),
+        var(--morado)
+    ) !important;
+    padding: 15px 25px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--rosa-claro) !important;
+    opacity: 0.8;
+}
+
+/* CONTENEDORES */
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+h1, h2, h3 {
+    color: var(--morado-oscuro);
+    font-weight: 700;
+}
+
+/* TARJETAS */
+
+.card {
+    background: var(--blanco);
+    border: 1px solid #f6dce9;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(152, 114, 212, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 25px rgba(152, 114, 212, 0.18);
+}
+
+.card-body {
+    padding: 24px;
+}
+
+/* BOTONES */
+
+.btn {
+    border-radius: 9px;
+    padding: 9px 17px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: var(--morado);
+    border-color: var(--morado);
+}
+
+.btn-primary:hover {
+    background: var(--morado-oscuro);
+    border-color: var(--morado-oscuro);
+}
+
+.btn-success {
+    background: var(--rosa-intenso);
+    border-color: var(--rosa-intenso);
+}
+
+.btn-success:hover {
+    background: #c94f81;
+    border-color: #c94f81;
+}
+
+/* TABLAS */
+
+.table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background: var(--morado);
+    color: white;
+    padding: 14px;
+    border: none;
+}
+
+.table td {
+    padding: 13px;
+    vertical-align: middle;
+}
+
+/* FORMULARIOS */
+
+.form-control,
+.form-select {
+    border-radius: 9px;
+    padding: 10px 12px;
+    border: 1px solid #ead8f4;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--rosa-intenso);
+    box-shadow: 0 0 0 3px rgba(223, 107, 154, 0.15);
+}
+
+/* TÍTULOS */
+
+.titulo-seccion {
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--rosa);
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    color: #987f9d;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* ENLACES */
+
+a {
+    color: var(--morado);
+}
+
+a:hover {
+    color: var(--rosa-intenso);
+}
+
+/* ALERTAS */
+
+.alert-success {
+    background: var(--rosa-claro);
+    border-color: var(--rosa);
+    color: var(--morado-oscuro);
+}
